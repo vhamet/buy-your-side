@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <title>Buy your side</title>
+
+  <script type="text/javascript" src="reviews.js"></script>
 </head>
+
 <body>
-  <h1>Buy your side</h1>
+
+  <nav class="navigation">
+    <a href="/">
+      <img class="main-logo" alt="logo" src="images/Logo_BYS_couleur.png" />
+    </a>
+    <ul>
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#reviews">Témoignages</a></li>
+      <li><a href="#commitments">Mes engagements</a></li>
+      <li><a href="#steps">Les étapes</a></li>
+      <li><a href="#pricing">Tarifs</a></li>
+      <li><a href="#who">Qui suis-je ?</a></li>
+    </ul>
+  </nav>
+
+  <div id="home">
+    <div class="content">
+      <h2>Pourquoi faire appel à moi</h2>
+      <ul>
+        <li>Le marché immobilier est toujours très tendu et les candidats à l’achat ont moins de temps pour se décider
+          sur
+          un bien à plusieurs centaines de milliers d’euros que pour l’achat d’une simple paire de chaussures (qui peut
+          elle être essayée…).</li>
+
+        <li>Le métier d’un agent immobilier est de vendre le bien de son client pas de vous conseiller en tant
+          qu’acheteur.</li>
+
+        <li>Chercher sérieusement un bien prend énormément de temps, si vous travaillez et que vous avez en plus une
+          famille
+          à gérer, vous dégager du temps est un exploit. Si vous êtes retraité hyper actif, vous n’avez pas plus de
+          temps
+          non plus !</li>
+
+        <li>Si un bien est exceptionnel ou s’il est affiché à un prix correct, seuls les tous premiers à réagir pourront
+          le
+          visiter et faire une offre.</li>
+
+        <li>Si vous vous être inscrit dans un listing d’agence immobilière, vous recevez plein d’offres de leur part
+          mais
+          jamais qui correspond à ce que vous leur avez pourtant demandé.</li>
+
+        <li>Vous vous êtes déjà laissé séduire par une photo pour réaliser sur place que la luminosité sur les photos
+          était
+          due à un filtre et que les fenêtres donnent sur une cour sinistre… Où bien que l’immeuble était superbe comme
+          sur les photos mais que l’annonce ne précisait pas qu’il était entouré de grandes barres de logements
+          couvertes
+          de tags…</li>
+
+        <li>Que ce soit pour investir ou habiter, vous faire accompagner dans la recherche et l’acquisition de votre
+          futur
+          bien vous évitera du stress, vous ouvrira des opportunités et surtout vous économisera un temps précieux.</li>
+
+        <li>Je vous apporte ma réactivité, mon expérience, j’amène du rationnel et de la prise de recul dans votre
+          décision
+          d’achat. Je vous aide à vous projeter et à évaluer le potentiel d’un bien. J’enquête ensuite pour vous
+          apporter
+          le maximum d’informations en vue de conforter votre décision finale.</li>
+
+
+      </ul>
+    </div>
+  </div>
+
+  <div id="reviews">
+    <h2>Témoignages clients</h2>
+    <div class="carousel">
+      <div class="chevron-container chevron-container-left disabled">
+        <img alt="chevron-left" src="icons/chevron_left.svg" class="chevron chevron-left" />
+      </div>
+      <div class="reviews__container"></div>
+      <div class="chevron-container  chevron-container-right">
+        <img alt="chevron-right" src="icons/chevron_right.svg" class="chevron chevron-right" />
+      </div>
+    </div>
+  </div>
+
+    <div id="commitments">
+      <h2>Mes engagements</h2>
+      <ul>
+        <li>Je fais passer vos intérêts avant les miens, plutôt qu’un résultat court terme je préfère votre satisfaction
+          finale. Mes clients sont ma meilleur publicité.</li>
+        <li>Je suis 100% indépendante : je ne suis affiliée à aucun réseau je n’ai dons pas intérêt à privilégier une
+          agence plutôt qu’une autre, si je vous recommande un prestataire c’est parce que je le connais, je ne demande
+          aucune contrepartie. </li>
+        <li>Je m’adapte au maximum à vos contraintes et je en vous présente que des biens qui correspondent à vos
+          critères.</li>
+        <li>Je me limite à 3 clients maximum, je privilégie un accompagnement personnalisé et une grande disponibilité.
+        </li>
+        <li>Mes tarifs sont transparents, je ne suis rémunérée que lors de la signature finale comme l’exige la loi
+          Hoguet, j’ai une carte d’agent immobilier, une assurance responsabilité civile. Mes contrats ne sont pas
+          tacitement reconductibles : je veux établir une relation de confiance pas piéger mes clients</li>
+        <li>Je respecte le délai de rétractation de 14 jours après la signature prévu par la loi : vous êtes libres de
+          changer d’avis</li>
+
+      </ul>
+    </div>
+
+    <div id="steps">
+      <h2>Les étaps de l'accompagnement</h2>
+    </div>
+
+    <div id="pricing">
+      <h2>Mes tarifs</h2>
+    </div>
+
+    <div id="who">
+      <h2>Qui suis-je ?</h2>
+      <p>Ancienne avocate spécialisée en fiscalité passée ensuite par les directions RH de grands groupes, j’ai
+        transformé
+        un accident de parcours en opportunité de changer de vie pour me lancer dans un univers qui m’a toujours attirée
+        :
+        l’immobilier.
+        Ce domaine est vaste et tous les métiers ne me faisaient pas rêver mais j’avais depuis longtemps en tête d’avoir
+        un rôle d’accompagnatrice à l’achat.
+        En aidant tout d’abord des amis, j’ai pu réaliser comme les acquéreurs ont besoin d’être rassurés et comme ils
+        peuvent être désarmés face aux arguments des agents immobiliers. Je pouvais apporter une réelle plus-value.
+        C’est donc tout naturellement que j’ai décidé de me spécialiser dans la recherche et l’accompagnement à l’achat
+        de
+        biens immobiliers.
+        Mes expériences personnelles en investissement et en rénovation, mon sens du contact, mes connaissances en droit
+        et mon énergie sont mes cartes maitresses pour réussir au mieux ma mission.
+        Rencontrons nous !
+      </p>
+    </div>
 </body>
+
 </html>
