@@ -98,6 +98,8 @@ const handleContainerScroll = () => {
     chevronContainerLeft.classList.add("disabled")
   else
     chevronContainerLeft.classList.remove("disabled")
+
+  scrollAmount = container.scrollLeft
 }
 
 document.addEventListener("DOMContentLoaded", function () {
