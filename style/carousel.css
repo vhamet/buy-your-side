@@ -1,0 +1,45 @@
+.carousel {
+  padding: 5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel .chevron-container {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chevron-container.disabled {
+  opacity: 0.2;
+}
+
+.carousel .chevron {
+  height: 3rem;
+  width: 3rem;
+}
+
+.chevron-left path {
+  fill: red;
+}
+
+.carousel .chevron-disabled {
+  fill: rgba(0, 0, 0, 0.2);
+  cursor: default;
+}
+
+.carousel > :first-child {
+  margin-right: 3rem;
+}
+
+.carousel > :last-child {
+  margin-left: 3rem;
+}
+
+.carousel path {
+  fill: var(--yellow);
+}
