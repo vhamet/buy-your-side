@@ -23,15 +23,15 @@
       <li><a href="#reviews">Témoignages</a></li>
       <li><a href="#commitments">Mes engagements</a></li>
       <li><a href="#steps">Les étapes</a></li>
-      <li><a href="#pricing">Tarifs</a></li>
+      <!-- <li><a href="#pricing">Tarifs</a></li> -->
       <li><a href="#who">Qui suis-je ?</a></li>
     </ul>
   </nav>
 
   <section class="home">
     <div class="section-header home-header">
-      <span id="home" class="anchor"></span>
-      <h2>Pourquoi faire appel à moi</h2>
+      <span id="home" class="absolute-anchor"></span>
+      <h2 class="section-title">Pourquoi faire appel à moi</h2>
     </div>
     <div class="home-content">
       <div class="thoughts">
@@ -78,10 +78,10 @@
 
   <section class="reviews">
     <div class="section-header reviews-header">
-      <span id="reviews" class="anchor"></span>
+      <span id="reviews" class="absolute-anchor"></span>
       <div class="reviews-header__picture">
       </div>
-      <h2>Témoignages clients</h2>
+      <h2 class="section-title">Témoignages clients</h2>
     </div>
     <div class="carousel">
       <div class="chevron-container chevron-container-left disabled">
@@ -96,8 +96,8 @@
 
   <section class="commitments">
     <div class="section-header commitments-header">
-      <span id="commitments" class="anchor"></span>
-      <h2>Mes engagements</h2>
+      <span id="commitments" class="absolute-anchor"></span>
+      <h2 class="section-title">Mes engagements</h2>
     </div>
     <div class="commitments-container">
       <div class="commitment">
@@ -106,12 +106,14 @@
         <img alt="icon" src="icons/avis-positif.png" />
       </div>
       <div class="commitment">
-        <p>Je suis 100% indépendante : je ne suis affiliée à aucun réseau je n’ai donc pas intérêt à privilégier une agence plutôt qu’une autre. 
+        <p>Je suis 100% indépendante : je ne suis affiliée à aucun réseau je n’ai donc pas intérêt à privilégier une
+          agence plutôt qu’une autre.
         </p>
         <img alt="icon" src="icons/liberte.png" />
       </div>
       <div class="commitment">
-        <p>Je m’adapte au maximum à vos contraintes et je ne vous présente que des biens qui correspondent vraiment à vos critères
+        <p>Je m’adapte au maximum à vos contraintes et je ne vous présente que des biens qui correspondent vraiment à
+          vos critères
         </p>
         <img alt="icon" src="icons/liste-de-controle.png" />
       </div>
@@ -122,12 +124,14 @@
       </div>
       <div class="commitment">
         <img alt="icon" src="icons/document-legal.png" />
-        <p>Mes tarifs sont transparents, je ne suis rémunérée que lors de la signature finale comme l’exige la loi Hoguet, j’ai une carte d’agent immobilier et une assurance responsabilité civile.
+        <p>Mes tarifs sont transparents, je ne suis rémunérée que lors de la signature finale comme l’exige la loi
+          Hoguet, j’ai une carte d’agent immobilier et une assurance responsabilité civile.
         </p>
       </div>
       <div class="commitment">
         <img alt="icon" src="icons/main-dans-la-main.png" />
-        <p>Mes contrats ne sont pas tacitement reconductibles : je veux établir une relation de confiance, pas piéger mes clients
+        <p>Mes contrats ne sont pas tacitement reconductibles : je veux établir une relation de confiance, pas piéger
+          mes clients
         </p>
       </div>
     </div>
@@ -135,41 +139,87 @@
 
   <section class="steps">
     <div class="section-header steps-header">
-      <span id="steps" class="anchor"></span>
+      <span id="steps" class="absolute-anchor"></span>
       <div class="steps-header__picture">
       </div>
-      <h2>Les étaps de l'accompagnement</h2>
+      <h2 class="section-title">Les étaps de l'accompagnement</h2>
+    </div>
+    <div class="steps-container">
+      <p>Définition du bien recherché : Je vous rencontre dans votre logement actuel pour faire connaissance, voir dans
+        quel univers vous vivez, ce que vous y aimez, ce que vous aimeriez changer etc… Nous établissons ensemble une
+        définition détaillée du bien de vos rêves avec des critères impératifs et des critères optionnels. Je vous
+        alerte en cas de critères incompatibles ou de souhaits éloignés de la réalité du marché.
+      </p>
+      <p>Présentation de logements : Je vous propose de visiter des biens qui correspondent VRAIMENT à vos critères en
+        vérifiant les éléments mentionnés dans l’annonce et en posant les questions complémentaires en amont. Je tiens
+        également à jour une liste de biens qui paraissaient parfaits sur le papier avec la raison de leur élimination.
+        Je vous laisse bien entendu un accès libre à cette base.
+      </p>
+      <p>Visite du logement : je vous accompagne évidemment pour chaque visite, je vous laisse vous faire une impression
+        générale sur le bien (appréciation des volumes, de la luminosité, sentiment de bien être etc…). Je me concentre
+        sur des aspects plus techniques : orientation réelle, parcours du soleil dans la pièce principale, épaisseur des
+        doubles vitrages, hauteur sous plafond, traces de dégâts des eaux, présence de fissures, état apparent de la
+        chaudière, possibilité de modification des cloisons, questions sur les travaux déjà réalisés etc… </p>
+      <p>Debrief suite à chaque visite : nous faisons le point sur les aspects positifs et négatifs, je vous partage les
+        points techniques que j’aurais relevés et vous décidez de la suite à donner
+      </p>
+      <p>Analyse des documents fournis après la visite : si vous êtes intéressés par le bien je vous fais un compte
+        rendu des différents diagnostiques techniques obligatoires, des comptes rendus d’AG (bonne tenue de la
+        copropriété, travaux envisagés, problèmes soulevés lors de AG, opportunités financières relevées (ex : un des
+        copropriétaires souhaite racheter des parties communes etc…).
+      </p>
+      <p>Offre d’achat : je vous présente une analyse poussée du prix bien à acheter à partir de différentes bases de
+        données du marché pour vous recommander un prix raisonnable à indiquer dans l’offre, vous décidez ensuite. Je
+        vous prépare le modèle d’offre d’achat que vous signez.
+      </p>
+      <p>Vérification des éléments extérieurs au bien : je vérifie si des projets qui pourraient nuire à votre
+        tranquillité ou à la valeur du bien sont en cours (percement d’une nouvelle ligne de métro sous la rue, permis
+        de surélévation accordé à l’immeuble d’en face etc…), je cherche si des appartements de l’immeuble sont loués à
+        des touristes, je consulte les comptes rendus des visites de quartier s’ils existent, je vérifie la présence
+        d’entreprises qui pourraient être source de nuisance etc... J’essaye d’obtenir le maximum d’informations pour
+        que vous sachiez où vous mettez les pieds.
+      </p>
+      <p>Signature de l’avant contrat (compromis ou promesse de vente) : lorsque l’offre est acceptée, je relis le
+        projet d’avant contrat pour vérifier qu’il reprend bien les termes de l’offre acceptée et je me tiens à votre
+        disposition pour vous expliquer tout point qui ne vous paraitrait pas clair (sans limitation, il y a tellement
+        de termes obscurs dans un avant contrat…). Je vous accompagne au rendez-vous.
+      </p>
+      <p>Signature définitive : Je fais la contre visite précédant la signature à vos côtés et là encore je relis le
+        projet, je réponds à vos questions et je vous accompagne à la signature. </p>
+      <p>Ouverture du champagne : vous n’aurez plus besoin de mon aide à cette étape !
+      </p>
     </div>
   </section>
 
   <!-- <section class="pricing">
     <div class="section-header">
-      <span id="pricing" class="anchor"></span>
-      <h2>Mes tarifs</h2>
+      <span id="pricing" class="absolute-anchor"></span>
+      <h2 class="section-title">Mes tarifs</h2>
     </div>
   </section> -->
 
   <section class="who">
-    <div class="section-header">
-      <span id="who" class="anchor"></span>
-      <h2>Qui suis-je ?</h2>
+    <span id="who" class="anchor"></span>
+    <h2>Qui suis-je ?</h2>
+    <div class="who-container">
+      <p>Ancienne avocate spécialisée en fiscalité passée ensuite par les directions RH de grands groupes, j’ai
+        transformé un accident de parcours en opportunité de changer de vie pour me lancer dans un univers qui m’a
+        toujours attirée : l’immobilier.
+      </p>
+      <p>Ce domaine est vaste et tous les métiers ne me faisaient pas rêver mais j’avais depuis longtemps en tête
+        d’avoir
+        un rôle d’accompagnatrice à l’achat.</p>
+      <p>En aidant tout d’abord des amis, j’ai pu réaliser comme les acquéreurs ont besoin d’être rassurés et comme ils
+        peuvent être désarmés face aux arguments des agents immobiliers. Je pouvais apporter une réelle plus-value.</p>
+      <p>C’est donc tout naturellement que j’ai décidé de me spécialiser dans la recherche et l’accompagnement à l’achat
+        de biens immobiliers.</p>
+      <p>Mes expériences personnelles en investissement et en rénovation, mon sens du contact, mes connaissances en
+        droit
+        et mon énergie sont mes cartes maitresses pour réussir au mieux ma mission.</p>
+      <p>Mais surtout je serai vraiment « buy your side » tout au long de votre parcours immobilier. </p>
+      <p>Rencontrons nous !
+      </p>
     </div>
-    <p>Ancienne avocate spécialisée en fiscalité passée ensuite par les directions RH de grands groupes, j’ai
-      transformé
-      un accident de parcours en opportunité de changer de vie pour me lancer dans un univers qui m’a toujours attirée
-      :
-      l’immobilier.
-      Ce domaine est vaste et tous les métiers ne me faisaient pas rêver mais j’avais depuis longtemps en tête d’avoir
-      un rôle d’accompagnatrice à l’achat.
-      En aidant tout d’abord des amis, j’ai pu réaliser comme les acquéreurs ont besoin d’être rassurés et comme ils
-      peuvent être désarmés face aux arguments des agents immobiliers. Je pouvais apporter une réelle plus-value.
-      C’est donc tout naturellement que j’ai décidé de me spécialiser dans la recherche et l’accompagnement à l’achat
-      de
-      biens immobiliers.
-      Mes expériences personnelles en investissement et en rénovation, mon sens du contact, mes connaissances en droit
-      et mon énergie sont mes cartes maitresses pour réussir au mieux ma mission.
-      Rencontrons nous !
-    </p>
   </section>
 
   <script type="module">
@@ -178,7 +228,7 @@
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
-  
+
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
@@ -190,7 +240,7 @@
       appId: "1:759158414918:web:e41202b8b87b8691783447",
       measurementId: "G-EZ0NESS37K"
     };
-  
+
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
