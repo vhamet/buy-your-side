@@ -379,12 +379,14 @@ h2 {
   justify-content: center;
 }
 
-.steps-header h2 {
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3.5rem;
+@media screen and (min-width: 769px) {
+  .steps-header h2 {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3.5rem;
+  }
 }
 
 .steps-header__picture {
@@ -429,4 +431,5 @@ h2 {
 
 .who-container {
   padding: 3rem;
+  padding-top: 0;
 }

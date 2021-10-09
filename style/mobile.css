@@ -1,0 +1,171 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--blue);
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none !important;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  .main-logo {
+    height: 1.5rem;
+  }
+
+  .mobile-placeholder {
+    width: 48px;
+  }
+
+  .burger-menu {
+    height: 1.5rem;
+  }
+
+  .section-header {
+    height: calc(100vh - 44px);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-title {
+    max-width: calc(100vw - 1rem);
+    margin-right: 0;
+    padding: 0.5rem;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-content .bubbles {
+    flex-direction: column;
+  }
+
+  .home-content .bubble-container:nth-child(1) .bubble {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .home-content .bubble-container:nth-child(1) img {
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-content .bubble-container:nth-child(2) img {
+    right: 0;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .reviews-header__picture {
+    width: 85%;
+    border-width: 10px;
+    background-position: center;
+  }
+
+  .carousel {
+    padding: 2rem 0.5rem;
+  }
+
+  .carousel .chevron-container {
+    display: none;
+  }
+
+  .reviews-container {
+    width: 100%;
+  }
+
+  .review-card {
+    min-width: 75vw;
+  }
+
+  .commitment {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    position: relative;
+  }
+
+  .commitment img {
+    margin: 0;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .steps-header__picture {
+    border-radius: 0;
+    border-width: 0;
+  }
+
+  .steps-header h2 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .steps-container p {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    text-align: justify !important;
+  }
+
+  .who-container {
+    padding: 1rem;
+    padding-top: 0;
+  }
+
+  .who {
+    position: relative;
+  }
+
+  .who .anchor {
+    position: absolute;
+    top: -3rem;
+  }
+
+  .who-container p {
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .sidenav,
+  .open-sidenav,
+  .mobile-placeholder {
+    display: none;
+  }
+}
