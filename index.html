@@ -9,11 +9,14 @@
   <link href="style/carousel.css" rel="stylesheet">
   <link href="style/bubble.css" rel="stylesheet">
   <link href="style/mobile.css" rel="stylesheet">
+  <link href="style/slide.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <title>Buy your side</title>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/reviews.js"></script>
   <script type="text/javascript" src="js/sidenav.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script>
 </head>
 
 <body>
@@ -52,27 +55,27 @@
     </div>
     <div class="home-content">
       <div class="thoughts">
-        <div class="thought">Les acquereurs d’un bien immobilier ont moins de temps pour se décider que pour l’achat
+        <div data-position="left" data-offset="60" class="notViewed animBlock thought">Les acquereurs d’un bien immobilier ont moins de temps pour se décider que pour l’achat
           d’une simple paire de chaussures …
         </div>
-        <div class="thought">Vous vous êtes déjà laissé séduire par une photo ou un descriptive pour réaliser sur place
+        <div data-position="left" data-offset="60" class="notViewed animBlock thought">Vous vous êtes déjà laissé séduire par une photo ou un descriptive pour réaliser sur place
           que la réalité était toute autre…
         </div>
-        <div class="thought">Si vous vous être inscrit dans un listing d’agence immobilière, vous recevez plein d’offres
+        <div data-position="left" data-offset="60" class="notViewed animBlock thought">Si vous vous être inscrit dans un listing d’agence immobilière, vous recevez plein d’offres
           de leur part mais jamais qui correspond à ce que vous leur avez pourtant demandé.
         </div>
-        <div class="thought">Un bien exceptionnel ou simplement affiché à un prix correct, sera vendu à l’un des 3
+        <div data-position="right" data-offset="60" class="notViewed animBlock thought">Un bien exceptionnel ou simplement affiché à un prix correct, sera vendu à l’un des 3
           premiers à réagir.</div>
-        <div class="thought">Chercher sérieusement un bien prend énormément de temps, si vous travaillez et que vous
+        <div data-position="right" data-offset="60" class="notViewed animBlock thought">Chercher sérieusement un bien prend énormément de temps, si vous travaillez et que vous
           avez en plus une famille à gérer, vous dégager du temps est un exploit !
         </div>
-        <div class="thought">Le métier d’un agent immobilier est de vendre le bien de son client pas de vous conseiller
+        <div data-position="right" data-offset="60" class="notViewed animBlock thought">Le métier d’un agent immobilier est de vendre le bien de son client pas de vous conseiller
           en tant qu’acheteur !
         </div>
 
       </div>
       <div class="bubbles">
-        <div class="bubble-container">
+        <div  data-position="left" data-offset="60" class="notViewed animBlock bubble-container">
           <img alt="bouée" src="icons/bouee-de-sauvetage.png" />
           <div class="bubble">Que ce soit pour investir ou habiter, je vous accompagne dans la recherche et
             l’acquisition
@@ -81,7 +84,7 @@
           </div>
 
         </div>
-        <div class="bubble-container">
+        <div  data-position="right" data-offset="60" class="notViewed animBlock bubble-container">
           <img alt="bouée" src="icons/phare.png" />
           <div class="bubble">Je vous apporte ma réactivité, mon expérience, j’amène du rationnel et de la prise de
             recul
@@ -117,35 +120,35 @@
       <h2 class="section-title">Mes engagements</h2>
     </div>
     <div class="commitments-container">
-      <div class="commitment">
+      <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <p>Votre satisfaction finale est mon seul but. Mes clients sont ma meilleure et ma seule publicité.
         </p>
         <img alt="icon" src="icons/avis-positif.png" />
       </div>
-      <div class="commitment">
+      <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <p>Je suis 100% indépendante : je ne suis affiliée à aucun réseau je n’ai donc pas intérêt à privilégier une
           agence plutôt qu’une autre.
         </p>
         <img alt="icon" src="icons/liberte.png" />
       </div>
-      <div class="commitment">
+      <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <p>Je m’adapte au maximum à vos contraintes et je ne vous présente que des biens qui correspondent vraiment à
           vos critères
         </p>
         <img alt="icon" src="icons/liste-de-controle.png" />
       </div>
-      <div class="commitment">
+      <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <p>Je me limite à 3 clients à la fois, je privilégie un accompagnement personnalisé et une grande disponibilité.
         </p>
         <img alt="icon" src="icons/trois-doigts.png" />
       </div>
-      <div class="commitment">
+      <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <img alt="icon" src="icons/document-legal.png" />
         <p>Mes tarifs sont transparents, je ne suis rémunérée que lors de la signature finale comme l’exige la loi
           Hoguet, j’ai une carte d’agent immobilier et une assurance responsabilité civile.
         </p>
       </div>
-      <div class="commitment">
+      <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <img alt="icon" src="icons/main-dans-la-main.png" />
         <p>Mes contrats ne sont pas tacitement reconductibles : je veux établir une relation de confiance, pas piéger
           mes clients
@@ -162,48 +165,48 @@
       <h2 class="section-title">Les étaps de l'accompagnement</h2>
     </div>
     <div class="steps-container">
-      <p><strong>Définition du bien recherché :</strong> Je vous rencontre dans votre logement actuel pour faire connaissance, voir dans
+      <p data-position="left" data-offset="60" class="notViewed animBlock"><strong>Définition du bien recherché :</strong> Je vous rencontre dans votre logement actuel pour faire connaissance, voir dans
         quel univers vous vivez, ce que vous y aimez, ce que vous aimeriez changer etc… Nous établissons ensemble une
         définition détaillée du bien de vos rêves avec des critères impératifs et des critères optionnels. Je vous
         alerte en cas de critères incompatibles ou de souhaits éloignés de la réalité du marché.
       </p>
-      <p><strong>Présentation de logements :</strong> Je vous propose de visiter des biens qui correspondent VRAIMENT à vos critères en
+      <p data-position="right" data-offset="60" class="notViewed animBlock"><strong>Présentation de logements :</strong> Je vous propose de visiter des biens qui correspondent VRAIMENT à vos critères en
         vérifiant les éléments mentionnés dans l’annonce et en posant les questions complémentaires en amont. Je tiens
         également à jour une liste de biens qui paraissaient parfaits sur le papier avec la raison de leur élimination.
         Je vous laisse bien entendu un accès libre à cette base.
       </p>
-      <p><strong>Visite du logement :</strong> je vous accompagne évidemment pour chaque visite, je vous laisse vous faire une impression
+      <p data-position="left" data-offset="60" class="notViewed animBlock"><strong>Visite du logement :</strong> je vous accompagne évidemment pour chaque visite, je vous laisse vous faire une impression
         générale sur le bien (appréciation des volumes, de la luminosité, sentiment de bien être etc…). Je me concentre
         sur des aspects plus techniques : orientation réelle, parcours du soleil dans la pièce principale, épaisseur des
         doubles vitrages, hauteur sous plafond, traces de dégâts des eaux, présence de fissures, état apparent de la
         chaudière, possibilité de modification des cloisons, questions sur les travaux déjà réalisés etc… </p>
-      <p><strong>Debrief suite à chaque visite :</strong> nous faisons le point sur les aspects positifs et négatifs, je vous partage les
+      <p data-position="right" data-offset="60" class="notViewed animBlock"><strong>Debrief suite à chaque visite :</strong> nous faisons le point sur les aspects positifs et négatifs, je vous partage les
         points techniques que j’aurais relevés et vous décidez de la suite à donner
       </p>
-      <p><strong>Analyse des documents fournis après la visite :</strong> si vous êtes intéressés par le bien je vous fais un compte
+      <p data-position="left" data-offset="60" class="notViewed animBlock"><strong>Analyse des documents fournis après la visite :</strong> si vous êtes intéressés par le bien je vous fais un compte
         rendu des différents diagnostiques techniques obligatoires, des comptes rendus d’AG (bonne tenue de la
         copropriété, travaux envisagés, problèmes soulevés lors de AG, opportunités financières relevées (ex : un des
         copropriétaires souhaite racheter des parties communes etc…).
       </p>
-      <p><strong>Offre d’achat :</strong> je vous présente une analyse poussée du prix bien à acheter à partir de différentes bases de
+      <p data-position="right" data-offset="60" class="notViewed animBlock"><strong>Offre d’achat :</strong> je vous présente une analyse poussée du prix bien à acheter à partir de différentes bases de
         données du marché pour vous recommander un prix raisonnable à indiquer dans l’offre, vous décidez ensuite. Je
         vous prépare le modèle d’offre d’achat que vous signez.
       </p>
-      <p><strong>Vérification des éléments extérieurs au bien :</strong> je vérifie si des projets qui pourraient nuire à votre
+      <p data-position="left" data-offset="60" class="notViewed animBlock"><strong>Vérification des éléments extérieurs au bien :</strong> je vérifie si des projets qui pourraient nuire à votre
         tranquillité ou à la valeur du bien sont en cours (percement d’une nouvelle ligne de métro sous la rue, permis
         de surélévation accordé à l’immeuble d’en face etc…), je cherche si des appartements de l’immeuble sont loués à
         des touristes, je consulte les comptes rendus des visites de quartier s’ils existent, je vérifie la présence
         d’entreprises qui pourraient être source de nuisance etc... J’essaye d’obtenir le maximum d’informations pour
         que vous sachiez où vous mettez les pieds.
       </p>
-      <p><strong>Signature de l’avant contrat (compromis ou promesse de vente) :</strong> lorsque l’offre est acceptée, je relis le
+      <p data-position="right" data-offset="60" class="notViewed animBlock"><strong>Signature de l’avant contrat (compromis ou promesse de vente) :</strong> lorsque l’offre est acceptée, je relis le
         projet d’avant contrat pour vérifier qu’il reprend bien les termes de l’offre acceptée et je me tiens à votre
         disposition pour vous expliquer tout point qui ne vous paraitrait pas clair (sans limitation, il y a tellement
         de termes obscurs dans un avant contrat…). Je vous accompagne au rendez-vous.
       </p>
-      <p><strong>Signature définitive :</strong> Je fais la contre visite précédant la signature à vos côtés et là encore je relis le
+      <p data-position="left" data-offset="60" class="notViewed animBlock"><strong>Signature définitive :</strong> Je fais la contre visite précédant la signature à vos côtés et là encore je relis le
         projet, je réponds à vos questions et je vous accompagne à la signature. </p>
-      <p><strong>Ouverture du champagne :</strong> vous n’aurez plus besoin de mon aide à cette étape !
+      <p data-position="right" data-offset="60" class="notViewed animBlock"><strong>Ouverture du champagne :</strong> vous n’aurez plus besoin de mon aide à cette étape !
       </p>
     </div>
   </section>
