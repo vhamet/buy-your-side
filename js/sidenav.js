@@ -1,5 +1,5 @@
 function openNav() {
-  document.querySelector(".sidenav").style.width = "250px";
+  document.querySelector(".sidenav").style.width = "80%";
 }
 
 function closeNav() {

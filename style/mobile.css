@@ -28,6 +28,16 @@
   margin-left: 50px;
 }
 
+.contact-mobile {
+  margin-top: 2rem;
+  color: var(--blue);
+}
+
+.contact-mobile p {
+  margin: 0;
+  padding: 8px 8px 8px 32px;
+}
+
 @media screen and (max-width: 768px) {
   .nav {
     display: none !important;
@@ -39,6 +49,14 @@
 
   .main-logo {
     height: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .contact {
+    width: 48px;
+  }
+  .contact p {
+    display: none;
   }
 
   .mobile-placeholder {
@@ -137,10 +155,25 @@
     font-size: 2rem;
   }
 
-  .steps-container p {
+  .steps-container .step {
     margin-right: 0 !important;
     margin-left: 0 !important;
     text-align: justify !important;
+  }
+
+  .step {
+    flex-direction: column;
+  }
+
+  .step-index {
+    height: 3rem;
+    min-width: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .pricing-content {
+    padding: 1rem;
+    text-align: justify;
   }
 
   .who-container {
@@ -157,7 +190,15 @@
     top: -3rem;
   }
 
-  .who-container p {
+  .who-container {
+    flex-direction: column;
+  }
+
+  .who-content {
+    margin-left: 0;
+  }
+
+  .who-content p {
     text-align: justify;
   }
 }

@@ -24,13 +24,9 @@
   --yellow: #c69d6c;
   --yellow-2: #c5a26b;
   --blue: #06758e;
+  --text-color: #293845;
 
-  --color-thought-1: #247ba0;
-  --color-thought-2: #56b4ea;
-  --color-thought-3: #406d72;
-  --color-thought-4: #06758e;
-  --color-thought-5: #0d5c63;
-  --color-thought-6: #23a5b0;
+  --deep-blue: #05014a;
 }
 
 html {
@@ -41,6 +37,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: textFont;
+  color: var(--text-color);
+  overflow-x: hidden;
 }
 
 h1,
@@ -54,12 +52,13 @@ h2 {
   top: 0;
   z-index: 10;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: white;
   box-shadow: 0 4px 5px -5px gray;
 }
 
 .navigation ul {
-  margin-left: auto;
   display: flex;
   align-items: center;
 }
@@ -67,6 +66,7 @@ h2 {
 .navigation li {
   display: block;
   list-style-type: none;
+  text-align: center;
 }
 
 .navigation li:not(:last-child) {
@@ -84,7 +84,28 @@ h2 {
 }
 
 .main-logo {
-  height: 3rem;
+  height: 2.5rem;
+}
+
+.contact p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.contact p:first-child {
+  margin-bottom: 0.3rem;
+}
+
+.contact img {
+  height: 16px;
+  width: 16px;
+  margin-right: 0.5rem;
+  fill: var(--blue);
 }
 
 .section-header {
@@ -102,7 +123,7 @@ h2 {
   margin: 0;
   padding: 2.5rem;
   position: absolute;
-  bottom: -3rem;
+  bottom: -6rem;
   right: -2rem;
   display: flex;
   align-items: center;
@@ -130,121 +151,103 @@ h2 {
 
 .home-content {
   margin: 0;
-  padding: 3rem;
   position: relative;
 }
 
 .thoughts {
+  padding: 3rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  background-color: var(--blue);
 }
 
 .home-content .thought:nth-child(1) {
   margin-bottom: 2rem;
-  background: var(--color-thought-1);
-  color: white;
+  background: white;
 }
 .home-content .thought:nth-child(1):before {
-  background: var(--color-thought-1);
-  box-shadow: -50px 30px 0 -12px var(--color-thought-1);
+  background: white;
+  box-shadow: -50px 30px 0 -12px white;
 }
 .home-content .thought:nth-child(1):after {
-  background: var(--color-thought-1);
-  box-shadow: 40px -34px 0 0 var(--color-thought-1),
-    -28px -6px 0 -2px var(--color-thought-1),
-    -24px 17px 0 -6px var(--color-thought-1),
-    -5px 25px 0 -10px var(--color-thought-1);
+  background: white;
+  box-shadow: 40px -34px 0 0 white, -28px -6px 0 -2px white,
+    -24px 17px 0 -6px white, -5px 25px 0 -10px white;
 }
 
 .home-content .thought:nth-child(2) {
-  background: var(--color-thought-2);
-  color: white;
+  background: white;
 }
 .home-content .thought:nth-child(2):before {
-  background: var(--color-thought-2);
-  box-shadow: -50px 30px 0 -12px var(--color-thought-2);
+  background: white;
+  box-shadow: -50px 30px 0 -12px white;
 }
 .home-content .thought:nth-child(2):after {
-  background: var(--color-thought-2);
-  box-shadow: 40px -34px 0 0 var(--color-thought-2),
-    -28px -6px 0 -2px var(--color-thought-2),
-    -24px 17px 0 -6px var(--color-thought-2),
-    -5px 25px 0 -10px var(--color-thought-2);
+  background: white;
+  box-shadow: 40px -34px 0 0 white, -28px -6px 0 -2px white,
+    -24px 17px 0 -6px white, -5px 25px 0 -10px white;
 }
 
 .home-content .thought:nth-child(3) {
-  background: var(--color-thought-3);
-  color: white;
+  background: white;
 }
 .home-content .thought:nth-child(3):before {
-  background: var(--color-thought-3);
-  box-shadow: -50px 30px 0 -12px var(--color-thought-3);
+  background: white;
+  box-shadow: -50px 30px 0 -12px white;
 }
 .home-content .thought:nth-child(3):after {
-  background: var(--color-thought-3);
-  box-shadow: 40px -34px 0 0 var(--color-thought-3),
-    -28px -6px 0 -2px var(--color-thought-3),
-    -24px 17px 0 -6px var(--color-thought-3),
-    -5px 25px 0 -10px var(--color-thought-3);
+  background: white;
+  box-shadow: 40px -34px 0 0 white, -28px -6px 0 -2px white,
+    -24px 17px 0 -6px white, -5px 25px 0 -10px white;
 }
 
 .home-content .thought:nth-child(4) {
-  background: var(--color-thought-4);
-  color: white;
+  background: white;
 }
 .home-content .thought:nth-child(4):before {
-  background: var(--color-thought-4);
-  box-shadow: -50px 30px 0 -12px var(--color-thought-4);
+  background: white;
+  box-shadow: -50px 30px 0 -12px white;
 }
 .home-content .thought:nth-child(4):after {
-  background: var(--color-thought-4);
-  box-shadow: 40px -34px 0 0 var(--color-thought-4),
-    -28px -6px 0 -2px var(--color-thought-4),
-    -24px 17px 0 -6px var(--color-thought-4),
-    -5px 25px 0 -10px var(--color-thought-4);
+  background: white;
+  box-shadow: 40px -34px 0 0 white, -28px -6px 0 -2px white,
+    -24px 17px 0 -6px white, -5px 25px 0 -10px white;
 }
 
 .home-content .thought:nth-child(5) {
-  background: var(--color-thought-5);
-  color: white;
+  background: white;
 }
 .home-content .thought:nth-child(5):before {
-  background: var(--color-thought-5);
-  box-shadow: -50px 30px 0 -12px var(--color-thought-5);
+  background: white;
+  box-shadow: -50px 30px 0 -12px white;
 }
 .home-content .thought:nth-child(5):after {
-  background: var(--color-thought-5);
-  box-shadow: 40px -34px 0 0 var(--color-thought-5),
-    -28px -6px 0 -2px var(--color-thought-5),
-    -24px 17px 0 -6px var(--color-thought-5),
-    -5px 25px 0 -10px var(--color-thought-5);
+  background: white;
+  box-shadow: 40px -34px 0 0 white, -28px -6px 0 -2px white,
+    -24px 17px 0 -6px white, -5px 25px 0 -10px white;
 }
 
 .home-content .thought:nth-child(6) {
-  background: var(--color-thought-6);
-  color: white;
+  background: white;
 }
 .home-content .thought:nth-child(6):before {
-  background: var(--color-thought-6);
-  box-shadow: -50px 30px 0 -12px var(--color-thought-6);
+  background: white;
+  box-shadow: -50px 30px 0 -12px white;
 }
 .home-content .thought:nth-child(6):after {
-  background: var(--color-thought-6);
-  box-shadow: 40px -34px 0 0 var(--color-thought-6),
-    -28px -6px 0 -2px var(--color-thought-6),
-    -24px 17px 0 -6px var(--color-thought-6),
-    -5px 25px 0 -10px var(--color-thought-6);
+  background: white;
+  box-shadow: 40px -34px 0 0 white, -28px -6px 0 -2px white,
+    -24px 17px 0 -6px white, -5px 25px 0 -10px white;
 }
 
 .home-content .bubbles {
-  margin-top: 2rem;
+  padding: 3rem;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-flow: row wrap;
+  flex-direction: column;
+  background-color: var(--blue);
 }
 
 .home-content .bubble-container {
@@ -257,33 +260,14 @@ h2 {
 .home-content .bubble {
   padding: 1.5rem 2rem;
   border-radius: 40px;
-}
-
-.home-content .bubble-container img {
-  height: 48px;
-  width: 48px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.home-content .bubble-container:nth-child(1) .bubble {
-  margin-right: 1rem;
-  padding-left: 2rem;
-  background: var(--yellow);
+  background-color: var(--deep-blue);
   color: white;
-}
-.home-content .bubble-container:nth-child(1) img {
-  left: -24px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-.home-content .bubble-container:nth-child(2) .bubble {
-  padding-right: 2rem;
-  background: var(--yellow-2);
-  color: white;
-}
-.home-content .bubble-container:nth-child(2) img {
-  right: -24px;
+.home-content .bubble-container:nth-child(1) {
+  margin-bottom: 2rem;
 }
 
 .reviews-header {
@@ -306,10 +290,12 @@ h2 {
   padding: 0.5rem;
   display: flex;
   overflow-y: auto;
+  align-items: flex-start;
 }
 
 .review-card {
   min-width: 30%;
+  width: 500px;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -326,7 +312,11 @@ h2 {
 
 .review-card__header {
   margin-bottom: 0.5rem;
-  color: var(--yellow);
+  color: var(--deep-blue);
+}
+
+.review-card__content {
+  color: var(--blue);
 }
 
 .commitments-header {
@@ -348,7 +338,8 @@ h2 {
 .commitment p {
   padding: 1rem;
   border-radius: 8px;
-  background: white;
+  background: var(--deep-blue);
+  color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .commitment:nth-child(2) {
@@ -406,19 +397,65 @@ h2 {
 
 .steps-container p {
   color: white;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
-.steps-container p:not(:last-child) {
+.steps-container .step:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
-.steps-container p:nth-child(2n + 1) {
+.steps-container .step:nth-child(2n + 1) {
   margin-right: 5rem;
 }
 
-.steps-container p:nth-child(2n) {
+.steps-container .step:nth-child(2n) {
   margin-left: 5rem;
-  text-align: right;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+}
+
+.step-index {
+  height: 5rem;
+  min-width: 5rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  background: var(--yellow);
+  border-radius: 50%;
+}
+
+.pricing-header {
+  background-image: url("../images/57606970_m.jpg");
+}
+
+.pricing-content {
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.who .logo {
+  padding: 3rem 6rem;
+  background: var(--blue);
+}
+
+.who .logo img {
+  width: calc(100vw - 12rem);
 }
 
 .who h2 {
@@ -427,9 +464,41 @@ h2 {
   position: relative;
   text-align: center;
   font-size: 2.5rem;
+  color: var(--deep-blue);
 }
 
 .who-container {
   padding: 3rem;
   padding-top: 0;
+  display: flex;
+}
+
+.portrait {
+  width: 400px;
+  margin-top: 3rem;
+}
+
+.who-content {
+  margin-left: 3rem;
+  color: var(--deep-blue);
+}
+
+footer {
+  padding: 3rem;
+  background: var(--blue);
+  color: white;
+}
+
+footer summary {
+  cursor: pointer;
+}
+
+.legal {
+  padding-left: 1rem;
+  font-size: 0.825rem;
+  font-style: italic;
+}
+
+.normal {
+  font-style: normal;
 }
