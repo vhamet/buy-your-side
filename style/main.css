@@ -141,6 +141,13 @@ h2 {
   visibility: hidden;
 }
 
+.who {
+  position: relative;
+}
+#who {
+  top: -5rem;
+}
+
 .anchor {
   visibility: hidden;
 }
