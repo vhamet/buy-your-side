@@ -22,23 +22,39 @@
 <body>
 
   <nav class="navigation">
-    <a class="open-sidenav" href="javascript:void(0)" onclick="openNav()">
-      <img class="burger-menu" alt="menu" src="icons/menu.svg" />
-    </a>
-    <img class="main-logo" alt="logo" src="images/Logo_BYS_couleur.png" />
-    <ul class="nav">
-      <li><a href="#home">Pourquoi faire <br />appel à moi ?</a></li>
-      <li><a href="#reviews">Témoignages <br />clients</a></li>
-      <li><a href="#commitments">Mes engagements</a></li>
-      <li><a href="#steps">Les étapes de <br />l'accompagnement</a></li>
-      <li><a href="#pricing">Mes honoraires</a></li>
-      <li><a href="#who">Qui suis-je ?</a></li>
-    </ul>
-    <div class="contact">
-      <p><img alt="email" src="icons/email.svg" />contact@buy-your-side.immo</p>
-      <p><img alt="phone" src="icons/phone-call.svg" />06 68 39 67 28</p>
+    <div class="main-nav">
+      <a class="open-sidenav" href="javascript:void(0)" onclick="openNav()">
+        <img class="burger-menu" alt="menu" src="icons/menu.svg" />
+      </a>
+      <img class="main-logo" alt="logo" src="images/Logo_BYS_couleur.png" />
+      <ul class="nav">
+        <li><a href="#home">Pourquoi faire <br />appel à moi ?</a></li>
+        <li><a href="#reviews">Témoignages <br />clients</a></li>
+        <li><a href="#commitments">Mes engagements</a></li>
+        <li><a href="#steps">Les étapes de <br />l'accompagnement</a></li>
+        <li><a href="#pricing">Mes honoraires</a></li>
+        <li><a href="#who">Qui suis-je ?</a></li>
+      </ul>
+      <div class="contact">
+        <p><img alt="email" src="icons/email.svg" />contact@buy-your-side.immo</p>
+        <p><img alt="phone" src="icons/phone-call.svg" />06 68 39 67 28</p>
+      </div>
+    </div>
+    <div class="sub-nav">
+      <label>Paris Ouest / Hauts de Seine
+      </label>
+      <label>Je vous accompagne dans la recherche et l’acquisition de votre futur bien
+      </label>
+      <a class="blog" href="/leblog" target="_blank">Le blog</a>
     </div>
   </nav>
+  <div class="sub-nav-mobile">
+    <label>Paris Ouest / Hauts de Seine
+    </label>
+    <label>Je vous accompagne dans la recherche et l’acquisition de votre futur bien
+    </label>
+    <a class="blog" href="/leblog" target="_blank">Le blog</a>
+  </div>
 
   <div class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times
@@ -49,8 +65,8 @@
       <a href="#pricing">Mes honoraires</a>
       <a href="#who" onclick="closeNav()">Qui suis-je ?</a>
       <div class="contact-mobile">
-        <p>contact@buy-your-side.immo</p>
-        <p>06 68 39 67 28</p>
+        <p><img alt="email" src="icons/email.svg" />contact@buy-your-side.immo</p>
+        <p><img alt="phone" src="icons/phone-call.svg" />06 68 39 67 28</p>
       </div>
   </div>
 
@@ -66,13 +82,13 @@
           est de vendre le bien de son client pas de vous conseiller
           en tant qu’acheteur !
         </div>
-        <div data-position="left" data-offset="60" class="notViewed animBlock thought">Vous vous êtes déjà laissé
-          séduire par une photo ou un descriptive pour réaliser sur place
-          que la réalité était toute autre…
+        <div data-position="left" data-offset="60" class="notViewed animBlock thought">
+          Vous vous êtes déjà laissé séduire par une photo ou un descriptif pour réaliser sur place que la réalité était
+          bien différente…
         </div>
-        <div data-position="left" data-offset="60" class="notViewed animBlock thought">Si vous vous être inscrit dans un
-          listing d’agence immobilière, vous recevez plein d’offres
-          de leur part mais jamais qui correspond à ce que vous leur avez pourtant demandé.
+        <div data-position="left" data-offset="60" class="notViewed animBlock thought">
+          Vous êtes noyé sous les alertes automatiques ou les sollicitations des agences, sans pour autant trouver votre
+          bonheur.
         </div>
         <div data-position="right" data-offset="60" class="notViewed animBlock thought">Un bien exceptionnel ou
           simplement affiché à un prix correct, sera vendu à l’un des 3
@@ -80,10 +96,6 @@
         <div data-position="right" data-offset="60" class="notViewed animBlock thought">Chercher sérieusement un bien
           prend énormément de temps, si vous travaillez et que vous
           avez en plus une famille à gérer, vous dégager du temps est un exploit !
-        </div>
-        <div data-position="right" data-offset="60" class="notViewed animBlock thought">Les acquereurs d’un bien
-          immobilier ont moins de temps pour se décider que pour l’achat
-          d’une simple paire de chaussures …
         </div>
       </div>
       <div class="bubbles">
@@ -132,7 +144,7 @@
     <div class="commitments-container">
       <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <img alt="icon" src="icons/avis-positif.png" />
-        <p>Votre satisfaction finale est mon seul but. Mes clients sont ma meilleure et ma seule publicité.
+        <p>Votre satisfaction finale est mon seul objectif. Mes clients sont ma meilleure et ma seule publicité.
         </p>
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
@@ -144,24 +156,24 @@
       <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <img alt="icon" src="icons/liste-de-controle.png" />
         <p>Je m’adapte au maximum à vos contraintes et je ne vous présente que des biens qui correspondent vraiment à
-          vos critères
+          vos critères.
         </p>
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <img alt="icon" src="icons/trois-doigts.png" />
-        <p>Je me limite à 3 clients à la fois, je privilégie un accompagnement personnalisé et une grande disponibilité.
+        <p>Je me limite à 3 recherches actives à la fois, je privilégie un accompagnement personnalisé et une grande
+          disponibilité.
         </p>
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <img alt="icon" src="icons/document-legal.png" />
-        <p>Mes tarifs sont transparents, je ne suis rémunérée que lors de la signature finale comme l’exige la loi
-          Hoguet, j’ai une carte d’agent immobilier et une assurance responsabilité civile.
+        <p>Mes tarifs sont transparents, j’ai une carte d’agent immobilier et une assurance RC Pro..
         </p>
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <img alt="icon" src="icons/main-dans-la-main.png" />
         <p>Mes contrats ne sont pas tacitement reconductibles : je veux établir une relation de confiance, pas piéger
-          mes clients
+          mes clients.
         </p>
       </div>
     </div>
@@ -177,56 +189,44 @@
     <div class="steps-container">
       <div data-position="left" data-offset="60" class="notViewed animBlock step">
         <div class="step-index">1</div>
-        <p><strong>Définition du bien recherché
-            :</strong> Je vous rencontre dans votre logement actuel pour faire connaissance, voir dans
+        <p><span class="step-title">Définition du bien recherché
+            :</span> Je vous rencontre si possible dans votre logement actuel pour faire connaissance, voir dans
           quel univers vous vivez, ce que vous y aimez, ce que vous aimeriez changer etc… Nous établissons ensemble une
           définition détaillée du bien de vos rêves avec des critères impératifs et des critères optionnels. Je vous
-          alerte en cas de critères incompatibles ou de souhaits éloignés de la réalité du marché.</p>
-      </div>
-      <div data-position="right" data-offset="60" class="notViewed animBlock step">
-        <div class="step-index">2</div>
-        <p><strong>Présentation de logements :</strong>
-          Je vous propose de visiter des biens qui correspondent VRAIMENT à vos critères en
-          vérifiant les éléments mentionnés dans l’annonce et en posant les questions complémentaires en amont. Je tiens
-          également à jour une liste de biens qui paraissaient parfaits sur le papier avec la raison de leur
-          élimination.
-          Je vous laisse bien entendu un accès libre à cette base.</p>
-      </div>
-      <div data-position="left" data-offset="60" class="notViewed animBlock step">
-        <div class="step-index">3</div>
-        <p><strong>Visite du logement :</strong> je
-          vous accompagne évidemment pour chaque visite, je vous laisse vous faire une impression
-          générale sur le bien (appréciation des volumes, de la luminosité, sentiment de bien être etc…). Je me
-          concentre
-          sur des aspects plus techniques : orientation réelle, parcours du soleil dans la pièce principale, épaisseur
-          des
-          doubles vitrages, hauteur sous plafond, traces de dégâts des eaux, présence de fissures, état apparent de la
-          chaudière, possibilité de modification des cloisons, questions sur les travaux déjà réalisés etc…
-          <strong>Debrief suite à chaque visite :</strong> nous faisons le point sur les aspects positifs et négatifs,
-          je
-          vous partage les
-          points techniques que j’aurais relevés et vous décidez de la suite à donner
+          alerte en cas de critères incompatibles ou de souhaits éloignés de votre budget.
         </p>
       </div>
       <div data-position="right" data-offset="60" class="notViewed animBlock step">
-        <div class="step-index">4</div>
-        <p><strong>Analyse des documents fournis après
-            la visite :</strong> si vous êtes intéressés par le bien je vous fais un compte
-          rendu des différents diagnostiques techniques obligatoires, des comptes rendus d’AG (bonne tenue de la
-          copropriété, travaux envisagés, problèmes soulevés lors de AG, opportunités financières relevées (ex : un des
-          copropriétaires souhaite racheter des parties communes etc…).</p>
+        <div class="step-index">2</div>
+        <p><span class="step-title">Présentation de logements :</span>
+          Je vous propose de visiter des biens qui correspondent VRAIMENT à vos critères en
+          vérifiant les éléments mentionnés dans l’annonce et en posant les questions complémentaires en amont.
+          Je vous accompagne pour chaque visite, je vous laisse vous faire une impression générale sur le bien
+          (appréciation des volumes, de la luminosité, sentiment de bien être etc…). Je me concentre sur des aspects
+          plus techniques : orientation réelle, parcours du soleil dans la pièce principale, épaisseur des doubles
+          vitrages, hauteur sous plafond, traces de dégâts des eaux, questions sur les travaux déjà réalisés etc…
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock step">
-        <div class="step-index">5</div>
-        <p><strong>Offre d’achat :</strong> je vous
+        <div class="step-index">3</div>
+        <p><span class="step-title">Suite de la visite et analyse des documents fournis :</span>
+          Après la visite nous faisons le point sur les aspects positifs et négatifs, je vous partage les points
+          techniques que j’aurais relevés et vous décidez de la suite. Si vous êtes intéressés par le bien je vous fais
+          un compte rendu des différents diagnostiques techniques obligatoires, des comptes rendus d’AG (bonne tenue de
+          la copropriété, travaux envisagés, problèmes soulevés lors de AG, opportunités financières relevées (ex : un
+          des copropriétaires souhaite racheter des parties communes etc…).
+        </p>
+      </div>
+      <div data-position="left" data-offset="60" class="notViewed animBlock step">
+        <div class="step-index">4</div>
+        <p><span class="step-title">Offre d’achat :</span> je vous
           présente une analyse poussée du prix bien à acheter à partir de différentes bases de
           données du marché pour vous recommander un prix raisonnable à indiquer dans l’offre, vous décidez ensuite. Je
           vous prépare le modèle d’offre d’achat que vous signez.</p>
       </div>
       <div data-position="right" data-offset="60" class="notViewed animBlock step">
-        <div class="step-index">6</div>
-        <p><strong>Vérification des éléments extérieurs
-            au bien :</strong> je vérifie si des projets qui pourraient nuire à votre
+        <div class="step-index">5</div>
+        <p><span class="step-title">Vérification des éléments extérieurs
+            au bien :</span> je vérifie si des projets qui pourraient nuire à votre
           tranquillité ou à la valeur du bien sont en cours (percement d’une nouvelle ligne de métro sous la rue, permis
           de surélévation accordé à l’immeuble d’en face etc…), je cherche si des appartements de l’immeuble sont loués
           à
@@ -235,23 +235,24 @@
           que vous sachiez où vous mettez les pieds.</p>
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock step">
-        <div class="step-index">7</div>
-        <p><strong>Signature de l’avant contrat
-            (compromis ou promesse de vente) :</strong> lorsque l’offre est acceptée, je relis le
+        <div class="step-index">6</div>
+        <p><span class="step-title">Signature de l’avant contrat
+            (compromis ou promesse de vente) :</span> lorsque l’offre est acceptée, je relis le
           projet d’avant contrat pour vérifier qu’il reprend bien les termes de l’offre acceptée et je me tiens à votre
           disposition pour vous expliquer tout point qui ne vous paraitrait pas clair (sans limitation, il y a tellement
           de termes obscurs dans un avant contrat…). Je vous accompagne au rendez-vous.</p>
       </div>
       <div data-position="right" data-offset="60" class="notViewed animBlock step">
-        <div class="step-index">8</div>
-        <p><strong>Signature définitive :</strong> Je
+        <div class="step-index">7</div>
+        <p><span class="step-title">Signature définitive :</span> Je
           fais la contre visite précédant la signature à vos côtés et là encore je relis le
           projet, je réponds à vos questions et je vous accompagne à la signature.
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock step">
-        <div class="step-index">9</div>
-        <p><strong>Ouverture du champagne :</strong>
-          vous n’aurez plus besoin de mon aide à cette étape !</p>
+        <div class="step-index">8</div>
+        <p><span class="step-title">Ouverture du champagne :</span>
+          vous n’aurez plus besoin de mon aide à cette étape ! Cela dit, je me joindrais bien volontiers à vous …
+        </p>
       </div>
   </section>
 
@@ -261,13 +262,16 @@
       <h2 class="section-title">Mes honoraires</h2>
     </div>
     <div class="pricing-content">
-      <p>Rien de plus simple ! 2% du prix d’achat hors frais d’agence et de notaire, <span class="underline">arrondi au
-          millier d’euros inférieur.</span>
-        Minimum 10 000 EUR, maximum 20 000 EUR.</p>
-      <p><span class="italic">Exemple</span> : vous décidez d’acquérir un appartement pour un prix « net vendeur » de
-        790 000 EUR. Mes honoraires de
-        recherche seront de 790 000 x 2% = 15 800 EUR arrondis à 15 000 EUR.</p>
-      <p>Les honoraires ne sont dus qu’à la signature de l’acte de vente avec la remise des clés.</p>
+      <p>Rien de plus simple !</p>
+      <p>Je pratique un forfait TTC de 2% du prix d’achat hors frais d’agence et de notaire, arrondi au millier d’euros
+        inférieur.<br />
+        Minimum 10 000 EUR, maximum 20 000 EUR.
+      </p>
+      <p class="italic">Exemple :</p>
+      <p class="italic">Vous décidez d’acquérir un appartement pour un prix « net vendeur » de 790 000 EUR.<br />
+        Mes honoraires de recherche seront de 790 000 x 2% = 15 800 EUR arrondis à 15 000 EUR.</p>
+      <p>Les honoraires ne sont dus qu’à la signature de l’acte de vente avec la remise des clés comme l’exige la loi.
+      </p>
     </div>
   </section>
 
@@ -280,16 +284,17 @@
       <img src="images/Portrait.jpg" alt="portrait" class="portrait" />
       <div class="who-content">
         <h2>Qui suis-je ?</h2>
-        <p>Ancienne avocate spécialisée en fiscalité passée ensuite par les directions RH de grands groupes, j’ai
-          transformé un accident de parcours en opportunité de changer de vie pour me lancer dans un univers qui m’a
-          toujours attirée : l’immobilier.
+        <p>Ancienne avocate spécialisée en fiscalité passée ensuite par les Directions RH de grands groupes, j’ai
+          transformé un accident de parcours en opportunité de changer de vie pour me lancer dans un secteur qui m’a
+          toujours passionnée à titre personnel : l’immobilier.
         </p>
         <p>Ce domaine est vaste et tous les métiers ne me faisaient pas rêver mais j’avais depuis longtemps en tête
           d’avoir
           un rôle d’accompagnatrice à l’achat.</p>
         <p>En aidant tout d’abord des amis, j’ai pu réaliser comme les acquéreurs ont besoin d’être rassurés et comme
           ils
-          peuvent être désarmés face aux arguments des agents immobiliers. Je pouvais apporter une réelle plus-value.
+          peuvent être désarmés face aux arguments des agents immobiliers. Grâce à mon expérience et à mes
+          connaissances, je pouvais apporter une réelle plus-value.
         </p>
         <p>C’est donc tout naturellement que j’ai décidé de me spécialiser dans la recherche et l’accompagnement à
           l’achat
@@ -297,9 +302,11 @@
         <p>Mes expériences personnelles en investissement et en rénovation, mon sens du contact, mes connaissances en
           droit
           et mon énergie sont mes cartes maitresses pour réussir au mieux ma mission.</p>
-        <p>Mais surtout je serai vraiment « buy your side » tout au long de votre parcours immobilier. </p>
+        <p>Mais surtout mon sens du service client fait que je serai vraiment « buy your side » tout au long de votre
+          parcours immobilier. </p>
         <p>Rencontrons nous !
         </p>
+        <p class="signature">Stéphanie</p>
       </div>
     </div>
   </section>
@@ -308,14 +315,22 @@
     <details>
       <summary>Mentions légales</summary>
       <div class="legal">
-        <p>BUY YOUR SIDE est le nom commercial de la Société 755 Immo, SAS au capital de 1 000 euros,</p>
-        <p>siège social 7 rue Carpeaux, 92400 Courbevoie,</p>
-        <p>897 585 758 RCS de Nanterre,</p>
-        <p>Titulaire de la Carte Professionnelle ”Transaction” délivrée par le Président de la Chambre de commerce et
+        <p>L’Editeur du site est la SAS 755 Immo, N° SIRET : 897 585 758 RCS de Nanterre
+          Téléphone : (+33) 6 68 39 67 28, siège social 7 rue Carpeaux, 92400 Courbevoie
+          Directeur de la Publication : Stéphanie HAMET, Hébergeur : Firebase</p>
+
+        <p>La structure du site et l’ensemble de ses contenus (images, photographies, logo, textes) sont protégés au
+          titre de la propriété intellectuelle conformément à la législation applicable en France et dans le monde, et
+          notamment le droit d’auteur et le droit à l’image. Tous droits de reproduction sont réservés. Sauf
+          autorisation expresse, il est strictement interdit de reproduire ou de représenter les contenus du Site à
+          d’autres fins que de consultation personnelle, de les modifier ou les adapter en tout ou partie.</p>
+
+        <p>BUY YOUR SIDE est le nom commercial de la Société 755 Immo, SAS au capital de 1 000 euros,
+          Titulaire de la Carte Professionnelle ”Transaction” délivrée par le Président de la Chambre de commerce et
           d'industrie de Paris Ile de France portant le n° CPI 9201 2021 000 000 104, ayant pour date de fin de validité
-          le 17/05/2024, La carte comportant la mention non-détention de fonds - absence de garantie financière.</p>
-        <p>Titulaire d'une garantie couvrant ses risques professionnels, auprès de Axa France IARD sous le numéro <span
-            class="normal">10821164OO4</span></p>
+          le 17/05/2024, La carte comportant la mention non-détention de fonds - absence de garantie financière.
+          Titulaire d'une garantie couvrant ses risques professionnels, auprès de Axa France IARD sous le numéro
+          10821164OO4</p>
     </details>
     </div>
   </footer>

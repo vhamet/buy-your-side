@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: signatureFont;
+  src: url("../fonts/AlexBrush-Regular.ttf");
+}
+
+@font-face {
   font-family: textFont;
   src: url("../fonts/Shape/Shape-Regular.otf") format("opentype");
 }
@@ -47,15 +52,39 @@ h2 {
 }
 
 .navigation {
-  padding: 0.5rem 1rem;
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0 4px 5px -5px gray;
+}
+
+.main-nav {
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
-  box-shadow: 0 4px 5px -5px gray;
+}
+
+.sub-nav {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--yellow);
+  color: white;
+}
+
+.sub-nav :nth-child(2) {
+  font-style: italic;
+}
+
+.blog {
+  font-family: titleFont;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  visibility: hidden;
 }
 
 .navigation ul {
@@ -73,7 +102,7 @@ h2 {
   margin-right: 1rem;
 }
 
-.navigation a {
+.main-nav a {
   color: #293845;
   font-weight: 700;
   text-decoration: none;
@@ -94,7 +123,6 @@ h2 {
   justify-content: flex-end;
   text-align: right;
   color: var(--blue);
-  font-weight: bold;
 }
 
 .contact p:first-child {
@@ -267,7 +295,7 @@ h2 {
 .home-content .bubble {
   padding: 1.5rem 2rem;
   border-radius: 40px;
-  background-color: var(--deep-blue);
+  background-color: #004054;
   color: white;
   font-size: 1.5rem;
   text-align: center;
@@ -275,6 +303,11 @@ h2 {
 
 .home-content .bubble-container:nth-child(1) {
   margin-bottom: 2rem;
+  margin-right: 5rem;
+}
+
+.home-content .bubble-container:nth-child(2) {
+  margin-left: 5rem;
 }
 
 .reviews-header {
@@ -337,38 +370,41 @@ h2 {
 }
 
 .commitment {
-  width: 70%;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
+  width: 350px;
+  margin-bottom: 3rem;
+  position: relative;
 }
 .commitment p {
   padding: 1rem;
   border-radius: 8px;
   background: var(--deep-blue);
   color: white;
+  text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .commitment:nth-child(2) {
-  margin-left: 5%;
-}
-.commitment:nth-child(3) {
-  margin-left: 10%;
-}
-.commitment:nth-child(4) {
   margin-left: 15%;
 }
+.commitment:nth-child(3) {
+  margin-left: 30%;
+}
+.commitment:nth-child(4) {
+  margin-left: 45%;
+}
 .commitment:nth-child(5) {
-  margin-left: 20%;
+  margin-left: 60%;
 }
 .commitment:nth-child(6) {
-  margin-left: 25%;
+  margin-left: 75%;
 }
 
 .commitment img {
   height: 48px;
   width: 48px;
-  margin: 0 1rem;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .steps-header {
@@ -425,6 +461,11 @@ h2 {
   align-items: center;
 }
 
+.step-title {
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+
 .step-index {
   height: 5rem;
   min-width: 5rem;
@@ -446,6 +487,15 @@ h2 {
 .pricing-content {
   padding: 3rem;
   font-size: 1.2rem;
+  text-align: center;
+}
+
+.pricing-content p:nth-child(3) {
+  margin-top: 3rem;
+}
+
+.pricing-content p:nth-child(4) {
+  margin-bottom: 3rem;
 }
 
 .underline {
@@ -478,16 +528,27 @@ h2 {
   padding: 3rem;
   padding-top: 0;
   display: flex;
+  align-items: center;
 }
 
 .portrait {
-  width: 400px;
+  display: block;
+  max-height: 500px;
+  max-width: 500px;
+  width: auto;
+  height: auto;
   margin-top: 3rem;
 }
 
 .who-content {
   margin-left: 3rem;
   color: var(--deep-blue);
+  text-align: justify;
+}
+
+.who-content .signature {
+  font-family: signatureFont;
+  font-size: 2rem;
 }
 
 footer {

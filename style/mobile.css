@@ -36,6 +36,19 @@
 .contact-mobile p {
   margin: 0;
   padding: 8px 8px 8px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-mobile img {
+  height: 16px;
+  width: 16px;
+  margin-right: 0.5rem;
+  fill: var(--blue);
+}
+
+.sub-nav-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -56,6 +69,28 @@
     width: 48px;
   }
   .contact p {
+    display: none;
+  }
+
+  .sub-nav {
+    display: none;
+  }
+
+  .sub-nav-mobile {
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--yellow);
+    color: white;
+  }
+
+  .sub-nav-mobile :nth-child(2) {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .blog {
     display: none;
   }
 
@@ -88,6 +123,14 @@
 
   .home-content .bubbles {
     flex-direction: column;
+  }
+
+  .home-content .bubble-container:nth-child(1) {
+    margin-right: 0;
+  }
+
+  .home-content .bubble-container:nth-child(2) {
+    margin-left: 0;
   }
 
   .home-content .bubble-container:nth-child(1) .bubble {
@@ -140,7 +183,7 @@
   .commitment img {
     margin: 0;
     position: absolute;
-    top: -18px;
+    top: -33px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -200,6 +243,10 @@
 
   .who-content p {
     text-align: justify;
+  }
+
+  .animBlock[data-position="right"] {
+    right: 0 !important;
   }
 }
 

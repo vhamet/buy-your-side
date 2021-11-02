@@ -3,23 +3,15 @@ const reviews = [
     "name": "Maryam",
     "profession": "Cadre HR internationale",
     "location": "Paris",
-    "review": `Au cours des 15 derniers mois, j'étais très motivée et bien décidée à trouver l'appartement de mes rêves à Paris.
-    J'ai étudié le sujet, rencontré un courtier pour connaître mon budget et commencé à recenser mes principaux critères. Pendant les 9 premiers mois, j'ai compté sur les annonces en ligne et les agences et j'ai visité une quinzaine d'appartements dans différents quartiers de Paris et je n'ai trouvé aucun coup de cœur malgré mon budget relativement généreux.
-    J'ai alors décidé de travailler avec un chasseur d'appartements qu'un ami m'avait recommandé en espérant gagner du temps et être accompagnée efficacement. 
-    La personne m'a montré environ 20 appartements en seulement 2 mois mais aucun d'entre eux ne correspondait complètement à mes critères. Après de nombreuses frustrations j’ai compris que les annonces n’étaient pas soigneusement sélectionnées. Ce chasseur m’a vraiment fait perdre mon temps.
-    J'ai annulé leur contact au bout des 2 mois et alors que j'étais désespérée, Stéphanie a pris le relai. 
-    Elle a tout de suite compris mes critères et m'a montré 2 appartements dont l'un a été un véritable coup de cœur dans lequel je me voyais vivre pour longtemps. Non seulement elle a finement sélectionné les annonces après une recherche complète en fonction de mes seuls critères et besoins personnels, mais en plus elle est restée présente et disponible pour tous les conseils dont j'ai eu besoin à chaque étape du processus, de la prise de décision à la signature finale ✍️
-    Je ne peux pas être plus reconnaissante de ce véritable accompagnement à la fois personnalisé et professionnel et je recommanderai fortement le vrai service de « BUY YOUR SIDE ».`
+    "review": `Après 15 mois de recherches infructueuses, j’ai décidé de travailler avec un chasseur d'appartements (pas Buy Your Side !) qu'un ami m'avait recommandé en espérant être accompagnée efficacement. La chasseuse m'a montré une vingtaine d’appartements en seulement 2 mois mais aucun d'entre eux ne correspondait complètement à mes critères. J’ai compris que les annonces n’étaient tout simplement pas soigneusement sélectionnées et je perdais mon temps au lieu d’en gagner. J’ai fini par annuler leur contrat et alors que j'étais désespérée, Stéphanie a pris le relai. Elle a tout de suite compris mes critères et ne m'a montré que 2 appartements dont l'un a été un véritable coup de cœur.  Elle est par la suite restée présente et disponible pour tous les conseils dont j'ai eu besoin à chaque étape, de la prise de décision à la signature finale. Je ne peux pas être plus reconnaissante de ce véritable accompagnement à la fois personnalisé et professionnel et je recommande fortement le vrai service de « BUY YOUR SIDE ».
+    `
   },
   {
     "name": "Elisabeth et Didier",
     "profession": "Retraités",
-    "location": "",
-    "review": `Ayant vendu notre maison sur Antony, nous étions à la recherche d’un appartement sur Courbevoie (à proximité de notre fils unique). Notre souhait était de trouver un appartement avec terrasse pour conserver un espace extérieur.
-    Sur le conseil familial nous avons collaboré avec Stéphanie se positionnant comme “chasseur d’appartement” à notre grande satisfaction.
-    Nous avons rencontré une véritable professionnelle, à l’écoute et respectueuse de nos besoins, de plus avec un relationnel sympathique, généreux.
-    Elle a su, durant cette période, nous soutenir lors des moments de doutes ou de découragement.
-    Avec Stéphanie nous avons été les premiers à visiter un appartement qui répondait à bon nombre de nos critères. Elle a su nous convaincre de faire une offre d’achat. Aujourd’hui, nous sommes ravis de ce choix et des conseils qu’elle nous a promulgués. 
+    "location": "Courbevoie",
+    "review": `Ayant vendu notre maison, nous étions à la recherche d’un appartement à proximité de notre fils unique. Notre souhait était de trouver un appartement avec terrasse pour conserver un espace extérieur. Sur un conseil familial nous avons collaboré avec Stéphanie à notre grande satisfaction. Nous avons rencontré une véritable professionnelle, à l’écoute et respectueuse de nos besoins, de plus avec un relationnel sympathique et généreux. Elle a su, durant cette période, nous soutenir lors des moments de doutes ou de découragement. Avec Stéphanie nous avons été les premiers à visiter un appartement qui répondait à bon nombre de nos critères. Aujourd’hui, nous sommes ravis de ce choix et des conseils qu’elle nous a promulgués. Nous ne pouvons que recommander de faire appel à cette professionnelle.
+    . 
     Nous ne pouvons que recommander de faire appel à cette professionnelle. 
     `
   },
