@@ -11,8 +11,6 @@ const reviews = [
     "profession": "Retraités",
     "location": "Courbevoie",
     "review": `Ayant vendu notre maison, nous étions à la recherche d’un appartement à proximité de notre fils unique. Notre souhait était de trouver un appartement avec terrasse pour conserver un espace extérieur. Sur un conseil familial nous avons collaboré avec Stéphanie à notre grande satisfaction. Nous avons rencontré une véritable professionnelle, à l’écoute et respectueuse de nos besoins, de plus avec un relationnel sympathique et généreux. Elle a su, durant cette période, nous soutenir lors des moments de doutes ou de découragement. Avec Stéphanie nous avons été les premiers à visiter un appartement qui répondait à bon nombre de nos critères. Aujourd’hui, nous sommes ravis de ce choix et des conseils qu’elle nous a promulgués. Nous ne pouvons que recommander de faire appel à cette professionnelle.
-    . 
-    Nous ne pouvons que recommander de faire appel à cette professionnelle. 
     `
   },
 ]
@@ -33,68 +31,3 @@ const createReviewCard = ({ name, profession, location, review }) => {
 
   return card
 }
-
-let scrollAmount = 0
-let container, chevronContainerRight, chevronContainerLeft, scrollMax, scrollWidth
-
-const handleScrollLeft = () => {
-  if (chevronContainerLeft.classList.contains("disabled")) return
-
-  scrollAmount -= scrollWidth
-  chevronContainerRight.classList.remove("disabled")
-  if (scrollAmount <= 0)
-    chevronContainerLeft.classList.add("disabled")
-
-  container.scrollTo({
-    top: 0,
-    left: Math.max(scrollAmount, 0),
-    behavior: 'smooth'
-  })
-}
-
-const handleScrollRight = () => {
-  console.log("IN SCROLL")
-  if (chevronContainerRight.classList.contains("disabled")) return
-
-  scrollAmount += scrollWidth
-  chevronContainerLeft.classList.remove("disabled")
-  if (scrollAmount >= scrollMax)
-    chevronContainerRight.classList.add("disabled")
-
-  container.scrollTo({
-    top: 0,
-    left: Math.min(scrollAmount, scrollMax),
-    behavior: 'smooth'
-  })
-}
-
-const handleContainerScroll = () => {
-  if (container.scrollLeft >= scrollMax)
-    chevronContainerRight.classList.add("disabled")
-  else
-    chevronContainerRight.classList.remove("disabled")
-
-  if (container.scrollLeft <= 0)
-    chevronContainerLeft.classList.add("disabled")
-  else
-    chevronContainerLeft.classList.remove("disabled")
-
-  scrollAmount = container.scrollLeft
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  container = document.querySelector(".reviews__container")
-  for (const review of reviews)
-    container.appendChild(createReviewCard(review))
-
-  scrollMax = container.scrollWidth - container.clientWidth
-  scrollWidth = document.querySelector(".review-card").offsetWidth
-
-  chevronContainerLeft = document.querySelector(".chevron-container-left")
-  chevronContainerLeft.addEventListener("click", handleScrollLeft)
-
-  chevronContainerRight = document.querySelector(".chevron-container-right")
-  chevronContainerRight.addEventListener("click", handleScrollRight)
-
-  container.addEventListener("scroll", handleContainerScroll)
-})

@@ -14,9 +14,24 @@
   <title>Buy your side</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/reviews.js"></script>
   <script type="text/javascript" src="js/sidenav.js"></script>
-  <script type="text/javascript" src="js/slide.js"></script>
+  <script type="text/javascript" src="js/reviews.js"></script>
+
+  <script>
+    function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    }
+
+    if (!isMobile()) {
+      document.write(`
+        <script type="text\/javascript" src="js\/slide.js"><\/script>
+        <script type="text\/javascript" src="js\/carousel.js"><\/script>
+      `)
+    } else {
+      document.write(`<script type="text\/javascript" src="js\/carousel-mobile.js"><\/script>`)
+    }
+  </script>
+
 </head>
 
 <body>
@@ -78,13 +93,13 @@
     </div>
     <div class="home-content">
       <div class="thoughts">
-        <div data-position="left" data-offset="60" class="notViewed animBlock thought">Le métier d’un agent immobilier
-          est de vendre le bien de son client pas de vous conseiller
-          en tant qu’acheteur !
-        </div>
         <div data-position="left" data-offset="60" class="notViewed animBlock thought">
           Vous vous êtes déjà laissé séduire par une photo ou un descriptif pour réaliser sur place que la réalité était
           bien différente…
+        </div>
+        <div data-position="left" data-offset="60" class="notViewed animBlock thought">Le métier d’un agent immobilier
+          est de vendre le bien de son client pas de vous conseiller
+          en tant qu’acheteur !
         </div>
         <div data-position="left" data-offset="60" class="notViewed animBlock thought">
           Vous êtes noyé sous les alertes automatiques ou les sollicitations des agences, sans pour autant trouver votre
@@ -154,7 +169,7 @@
         </p>
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
-        <img alt="icon" src="icons/liste-de-controle.png" />
+        <img alt="icon" src="icons/cible.png" />
         <p>Je m’adapte au maximum à vos contraintes et je ne vous présente que des biens qui correspondent vraiment à
           vos critères.
         </p>
@@ -167,7 +182,7 @@
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
         <img alt="icon" src="icons/document-legal.png" />
-        <p>Mes tarifs sont transparents, j’ai une carte d’agent immobilier et une assurance RC Pro..
+        <p>Mes tarifs sont transparents, j’ai une carte d’agent immobilier et une assurance RC Pro.
         </p>
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock commitment">
@@ -212,8 +227,7 @@
           Après la visite nous faisons le point sur les aspects positifs et négatifs, je vous partage les points
           techniques que j’aurais relevés et vous décidez de la suite. Si vous êtes intéressés par le bien je vous fais
           un compte rendu des différents diagnostiques techniques obligatoires, des comptes rendus d’AG (bonne tenue de
-          la copropriété, travaux envisagés, problèmes soulevés lors de AG, opportunités financières relevées (ex : un
-          des copropriétaires souhaite racheter des parties communes etc…).
+          la copropriété, travaux envisagés, problèmes soulevés lors de AG, opportunités financières relevées…).
         </p>
       </div>
       <div data-position="left" data-offset="60" class="notViewed animBlock step">
@@ -284,11 +298,10 @@
       <img src="images/Portrait.jpg" alt="portrait" class="portrait" />
       <div class="who-content">
         <h2>Qui suis-je ?</h2>
-        <p>Ancienne avocate spécialisée en fiscalité passée ensuite par les Directions RH de grands groupes, j’ai
-          transformé un accident de parcours en opportunité de changer de vie pour me lancer dans un secteur qui m’a
-          toujours passionnée à titre personnel : l’immobilier.
+        <p>Ancienne avocate spécialisée en fiscalité passée ensuite par les Directions RH de grands groupes, j’ai mis à profit le confinement pour m’orienter vers un secteur qui m’avait toujours passionnée à
+          titre personnel : l’immobilier.
         </p>
-        <p>Ce domaine est vaste et tous les métiers ne me faisaient pas rêver mais j’avais depuis longtemps en tête
+        <p>Ce domaine est vaste et tous les métiers ne m’attiraient pas mais j’avais depuis longtemps en tête
           d’avoir
           un rôle d’accompagnatrice à l’achat.</p>
         <p>En aidant tout d’abord des amis, j’ai pu réaliser comme les acquéreurs ont besoin d’être rassurés et comme
@@ -315,8 +328,9 @@
     <details>
       <summary>Mentions légales</summary>
       <div class="legal">
+        <p>Icones : flaticon.com <br /> Graphistes : Freepik + Pixel perfect</p>
         <p>L’Editeur du site est la SAS 755 Immo, N° SIRET : 897 585 758 RCS de Nanterre
-          Téléphone : (+33) 6 68 39 67 28, siège social 7 rue Carpeaux, 92400 Courbevoie
+          Téléphone : (+33) 6 68 39 67 28, siège social 7 rue Carpeaux, 92400 Courbevoie,
           Directeur de la Publication : Stéphanie HAMET, Hébergeur : Firebase</p>
 
         <p>La structure du site et l’ensemble de ses contenus (images, photographies, logo, textes) sont protégés au
@@ -338,25 +352,25 @@
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyDgc0wUtaDZB7GRcFhNU-BS1pEk3ysK5dk",
-      authDomain: "buy-your-side.firebaseapp.com",
-      projectId: "buy-your-side",
-      storageBucket: "buy-your-side.appspot.com",
-      messagingSenderId: "759158414918",
-      appId: "1:759158414918:web:e41202b8b87b8691783447",
-      measurementId: "G-EZ0NESS37K"
-    };
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDgc0wUtaDZB7GRcFhNU-BS1pEk3ysK5dk",
+        authDomain: "buy-your-side.firebaseapp.com",
+        projectId: "buy-your-side",
+        storageBucket: "buy-your-side.appspot.com",
+        messagingSenderId: "759158414918",
+        appId: "1:759158414918:web:e41202b8b87b8691783447",
+        measurementId: "G-EZ0NESS37K"
+      };
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
   </script>
 </body>
 

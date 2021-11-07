@@ -158,19 +158,36 @@
   }
 
   .carousel {
-    padding: 2rem 0.5rem;
+    width: 100vw;
+    padding: 2rem 0rem;
+    justify-content: center;
   }
 
   .carousel .chevron-container {
-    display: none;
+    margin: 0;
+    padding: 0;
   }
 
-  .reviews-container {
-    width: 100%;
+  .carousel .chevron {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .reviews__container {
+    padding: 0;
+    display: block;
   }
 
   .review-card {
-    min-width: 75vw;
+    width: calc(100vw - 8rem);
+    min-width: unset;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: none;
+  }
+
+  .review-card__content {
+    text-align: justify;
   }
 
   .commitment {
