@@ -498,12 +498,23 @@ h2 {
   margin-bottom: 3rem;
 }
 
+.mention {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  font-style: italic;
+  text-align: left;
+}
+
 .underline {
   text-decoration: underline;
 }
 
 .italic {
   font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .who .logo {
@@ -547,8 +558,14 @@ h2 {
 }
 
 .who-content .signature {
+  margin-bottom: 0rem;
   font-family: signatureFont;
   font-size: 2rem;
+}
+
+.who-content .phone {
+  margin: 0;
+  font-size: 1rem;
 }
 
 footer {
@@ -559,6 +576,46 @@ footer {
 
 footer summary {
   cursor: pointer;
+}
+
+.footer-container {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.mediation {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.825rem;
+}
+
+.mediation span:not(:last-child),
+a {
+  margin-bottom: 0.5rem;
+}
+
+.mediation a {
+  text-decoration: none;
+  color: white;
+}
+
+.mediation a:hover {
+  color: var(--yellow);
+}
+
+.fci {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.fci img {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
 }
 
 .legal {
